@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html id="htmlmain" lang="en" style="background: #000000;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EncryptAndDecrypt</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+</head>
+
+<body id="mainbackground">
+    <div class="container-fluid text-start" style="margin-left: 0px;padding-right: 0px;padding-left: 0px;margin-right: 0px;margin-top: 5px;width: 650px;">
+        <h1 class="text-start">Text Encryptor &amp; Decryptor</h1>
+        <h1 class="text-start" id="passwordlabel" style="margin-left: 0px;font-size: 20.9px;margin-right: 0px;padding-left: 0px;width: 650px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Password:&nbsp;<input type="text" id="passwordtext" style="margin-left: 5px;"></h1>
+        <h1 class="text-start" id="texttoenclabel" style="margin-top: 10px;margin-left: 0px;font-size: 20.9px;margin-right: 0px;width: 650px;">Text to encrypt:&nbsp;<input type="text" id="toenctext" style="margin-left: 5px;margin-top: 0px;"></h1><button class="btn btn-primary" id="encbutton" type="button" style="margin-left: 159px;padding-bottom: 0px;padding-top: 0px;margin-top: -3px;margin-right: 0px;" onclick="encryptit()">Encrypt</button>
+    </div>
+    <h1 class="text-nowrap text-start" id="enctextlabel" style="margin-left: 39px;margin-top: 9px;font-size: 16.4px;">Encrypted Text:</h1>
+    <h1 class="text-start" id="enctext" style="margin-left: 39px;font-size: 14.4px;"></h1>
+    <div class="container text-start" style="margin-right: 0px;margin-left: 38px;padding-left: 0px;padding-bottom: 5px;">
+        <h1 class="text-nowrap text-start" id="decryptlabel2" style="font-size: 20.4px;">To Decrypt:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1><input type="text" id="enctext2" style="margin-right: 86px;">
+        <h1 class="text-start" id="passwordlabel2" style="font-size: 20.9px;">Password:&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h1><input type="text" id="passwordtext2"><button class="btn btn-primary" id="dectextbutton" type="button" style="padding-bottom: 0px;padding-top: 0px;margin-left: 10px;margin-top: -3px;margin-bottom: 0px;" onclick="decryptit()">Decrypt</button>
+    </div>
+    <div class="alert alert-success font-monospace fw-normal text-center" role="alert"><span><strong>This app is for testing purposes only.</strong><br><strong>By MaxiiKK.</strong><br></span><button class="btn btn-primary" id="darkmodebutton" type="button" style="padding-top: 0px;padding-bottom: 0px;padding-right: 6px;padding-left: 5px;margin-top: 4px;margin-left: 39px;margin-bottom: 0px;margin-right: 34px;background: var(--bs-success);" onclick="darker()">Enable Dark Mode</button></div>
+    <h1 id="decrtext" style="margin-bottom: 0px;margin-top: 39px;margin-left: 39px;"></h1>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
+</html>
