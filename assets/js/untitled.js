@@ -10,6 +10,7 @@ function darker(){
         decryptlabel2.style.color = "white";
         passwordlabel2.style.color = "white";
         decrtext.style.color = "white";
+        mainheading.style.color = "white";
         htmlmain.style.backgroundColor = "black";
         darkmodebutton.style.backgroundColor = "red";
         document.getElementById("darkmodebutton").innerHTML = "Enable Light Mode";
@@ -21,9 +22,10 @@ function darker(){
         passwordlabel.style.color = "black";
         enctextlabel.style.color = "black";
         enctext.style.color = "black";
-        passwordlabel.style.color = "black";
+        passwordlabel2.style.color = "black";
         decryptlabel2.style.color = "black";
         decrtext.style.color = "black";
+        mainheading.style.color = "black";
         htmlmain.style.backgroundColor = "white";
         darkmodebutton.style.backgroundColor = "green";
         document.getElementById("darkmodebutton").innerHTML = "Enable Dark Mode";
@@ -36,8 +38,15 @@ function encryptit(){
     var mypassword = document.getElementById("passwordtext").value;
     if (mypassword.length == 0 || (document.getElementById("toenctext").value).length == 0){
         document.getElementById("enctext").innerHTML = "Fill the fields first!";
+        enctext.style.color = "red";
     }
     else{
+        if (theme == 0){
+            enctext.style.color = "black";
+        }
+        else{
+            enctext.style.color = "white";
+        }
         try{
             encr = CryptoJS.AES.encrypt(texttoenc, mypassword);
             document.getElementById("enctext").innerHTML = encr;
