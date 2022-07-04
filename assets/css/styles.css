@@ -1,4 +1,105 @@
 .input-data {
   background: linear-gradient(-135deg, #ffeaee, #d8d2d3);
 }
+#passwordlabel {
+  position:absolute;
+  pointer-events:none;
+  font-size: 20px;
+  opacity: 70%;
+  margin-top:-28px;
+  margin-left: 15px;
+}
+#encbutton{
+  background: linear-gradient(-135deg, #c53, #430);
+  margin-left: 5px;
+}
+#dectextbutton{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-left: 10px;
+  margin-top: -3px;
+  margin-bottom: 0px;
+  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  border-style: none;
+}
+#texttoenclabel {
+  pointer-events:none;
+  opacity: 70%;
+  margin-left: 15px;
+  font-size: 20px;
+  margin-top: -28px;
+  width: 650px;
+  position:absolute;
+}
+#copytoclipbutton{
+  background:linear-gradient(-138deg, rgb(87, 0, 4), rgb(0, 80, 90));
+}
+#passwordtext:valid ~ #passwordlabel,
+#passwordtext:hover ~ #passwordlabel,
+#passwordtext:focus ~ #passwordlabel{
+  transform:translateX(200px);
+  opacity: 100%;
+  transition: 1s ease;
+}
 
+#toenctext:valid ~ #texttoenclabel,
+#toenctext:focus ~ #texttoenclabel,
+#toenctext:hover ~ #texttoenclabel{
+  transform: translateX(200px);
+  opacity: 100%;
+  transition: 1s ease;
+}
+
+#encbutton:hover{
+  background: linear-gradient(-135deg, rgb(0, 126, 57), rgb(0, 52, 119));
+  transition: 2s ease;
+}
+#dectextbutton:hover{
+  background: linear-gradient(-135deg, rgb(0, 126, 57), rgb(0, 52, 119));
+  transition: 0.25s ease;
+}
+#enctext:hover{
+  transform: translateX(10px);
+  color: rgb(43, 255, 0);
+  font-style: italic;
+  transition: 1s ease;
+}
+#copytoclipbutton:hover{
+  background: linear-gradient(-135deg, rgb(0, 126, 57), rgb(0, 52, 119));
+  transition: 0.25s ease;
+}
+#decryptlabel2{
+  position: absolute;
+  margin-left: 10px;
+  margin-top: -28px;
+  opacity: 70%;
+  pointer-events: none;
+}
+#enctext2{
+  margin-top: 10px;
+}
+#enctext2:valid ~ #decryptlabel2,
+#enctext2:focus ~ #decryptlabel2,
+#enctext2:hover ~ #decryptlabel2{
+  transform: translateX(200px);
+  opacity: 100%;
+  transition: 1s ease;
+}
+#passwordlabel2{
+  position: absolute;
+  margin-top: -28px;
+  pointer-events: none;
+  margin-left: 10px;
+}
+#dectextbutton{
+  margin-left: 38px;
+  margin-top: 1px;
+  margin-bottom: 10px;
+}
+#passwordtext2:valid ~ #passwordlabel2,
+#passwordtext2:focus ~ #passwordlabel2,
+#passwordtext2:hover ~ #passwordlabel2{
+  transform: translateX(200px);
+  opacity: 100%;
+  transition: 1s ease;
+}

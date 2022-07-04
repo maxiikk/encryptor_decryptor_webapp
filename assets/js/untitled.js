@@ -72,3 +72,17 @@ function decryptit(){
         }
     }
 }
+function copytoclipboard(){
+    var copyText = document.getElementById("enctext").innerHTML;
+    if (copyText.length != 0 && copyText != "Nothing to copy!"){
+        navigator.clipboard.writeText(copyText);
+    }
+    else{
+        enctext.style.color = "red";
+        document.getElementById("enctext").innerHTML = "Nothing to copy!";
+    }
+}
+function aboutpage(){
+    sessionStorage.setItem("theme", theme);
+    window.location.href = "aboutpage.html";
+}

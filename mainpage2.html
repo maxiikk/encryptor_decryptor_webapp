@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html id="htmlmain" class="wrapper" lang="en" style="background: #000000;">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>EncryptAndDecrypt</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+</head>
+<body id="mainbackground">
+    <div class="container-fluid text-start" style="padding-right: 0px;padding-left: 0px;margin-left: 32px;margin-top: 5px;width: 650px;">
+        <div>
+            <h1 class="text-start" id="mainheading">Text Encryptor &amp; Decryptor</h1>
+            <div>
+                <input type="text" id="toenctext" class="input-data" style="margin-left: 5px;margin-top: 0px;" required>
+                <h1 class="text-start" id="texttoenclabel">Text to encrypt</h1>
+            </div>
+            <input type="text" id="passwordtext" class="input-data" style="margin-left: 5px;" required><h1 class="text-start" id="passwordlabel">Password</h1>
+            <div>
+                <button class="btn btn-primary" id="encbutton" type="button" style="padding-bottom: 0px;padding-top: 0px;margin-top: 5px;margin-right: 0px; transform: rotate(0deg);border-style: none;" onclick="encryptit()">Encrypt</button>
+            </div>
+        </div>
+    </div>
+    <h1 class="text-nowrap text-start" id="enctextlabel" style="margin-left: 39px;margin-top: 9px;font-size: 16.4px;">Encrypted Text:</h1>
+    <h1 class="text-start" id="enctext" style="margin-left: 39px;font-size: 14.4px;" required></h1>
+    <div>
+        <button class="btn btn-primary" type="button" id="copytoclipbutton" style="width:70px;height:25px;padding-top:0px;padding-bottom:0px;margin-left: 38px;"onclick="copytoclipboard()">Copy</button>
+    </div>
+    <div class="container text-start" style="margin-right: 0px;margin-left: 38px;padding-left: 0px;padding-bottom: 5px;">
+        <input type="text" id="enctext2" class="input-data" required><h1 class="text-nowrap text-start" id="decryptlabel2" style="font-size: 20px;">To Decrypt</h1>
+        <div>
+            <input type="text" id="passwordtext2" class="input-data" required><h1 class="text-start" id="passwordlabel2" style="font-size: 20px;">Password</h1>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-primary" id="dectextbutton" type="button" onclick="decryptit()">Decrypt</button>
+    </div>
+    <div class="alert alert-success font-monospace fw-normal text-center" role="alert"><span><strong>This app is for testing purposes only.</strong><br><strong>By MaxiiKK.</strong><br></span><button class="btn btn-primary" id="darkmodebutton" type="button" style="padding-top: 0px;padding-bottom: 0px;padding-right: 6px;padding-left: 5px;margin-top: 4px;margin-left: 39px;margin-bottom: 0px;margin-right: 10px;background: var(--bs-success);border-style: none;" onclick="darker()">Enable Dark Mode</button><button class="btn btn-primary" type="button" onclick="aboutpage()" style="padding-top:0px;padding-bottom:0px;margin-top:5px;height:25px;">About</button></div>
+    <h1 id="decrtext" style="margin-bottom: 0px;margin-top: 39px;margin-left: 39px;"></h1>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/mainpage2.js"></script> <!--replace all but this line when you update the interface of the main page-->
+</body>
+
+</html>
