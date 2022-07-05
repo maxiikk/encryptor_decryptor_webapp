@@ -1,6 +1,12 @@
 .input-data {
   background: linear-gradient(-135deg, #ffeaee, #d8d2d3);
 }
+#htmlmain{
+  transition: 1s ease;
+}
+#mainbackground{
+  transition: 1s ease;
+}
 #passwordlabel {
   position:absolute;
   pointer-events:none;
@@ -12,6 +18,7 @@
 }
 #encbutton{
   background: linear-gradient(-135deg, #c53, #430);
+  transition: 0.25s ease;
   margin-left: 5px;
 }
 #dectextbutton{
@@ -21,6 +28,7 @@
   margin-top: -3px;
   margin-bottom: 0px;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
+  transition: 0.25s ease;
   border-style: none;
 }
 #texttoenclabel {
@@ -35,6 +43,11 @@
 }
 #copytoclipbutton{
   background:linear-gradient(-138deg, rgb(87, 0, 4), rgb(0, 80, 90));
+  border-style: none;
+  padding-top:0px;
+  padding-bottom:0px;
+  margin-left: 38px;
+  transition: 0.25s ease;
 }
 #passwordtext:valid ~ #passwordlabel,
 #passwordtext:hover ~ #passwordlabel,
@@ -51,13 +64,17 @@
   opacity: 100%;
   transition: 1s ease;
 }
-
+#mainheading{
+  transition: 2s ease;
+}
 #encbutton:hover{
   background: linear-gradient(-135deg, rgb(0, 126, 57), rgb(0, 52, 119));
-  transition: 2s ease;
+  font-size: 17px;
+  transition: 0.25s ease;
 }
 #dectextbutton:hover{
   background: linear-gradient(-135deg, rgb(0, 126, 57), rgb(0, 52, 119));
+  font-size: 17px;
   transition: 0.25s ease;
 }
 #enctext{
@@ -71,6 +88,7 @@
 }
 #copytoclipbutton:hover{
   background: linear-gradient(-135deg, rgb(0, 126, 57), rgb(0, 52, 119));
+  font-size: 17px;
   transition: 0.25s ease;
 }
 #decryptlabel2{
@@ -117,4 +135,35 @@
 	opacity: 0%;
 	opacity: 100%;
 	transition: 1s ease;
+}
+#alert1{
+  height:115px;
+  transition: 1s ease;
+}
+#alert1:hover{
+  font-size: 18px;
+  transition: 0.5s ease;
+}
+#aboutbutton{
+  position: absolute;
+  margin-top:3px;
+  font-size: 16px;
+  padding-right: 6px;
+  padding-left: 5px;
+  margin-left: 25px;
+  transition: 0.25 ease;
+}
+#aboutbutton:hover{
+  font-size: 17px;
+  transition: 0.25s ease;
+}
+#darkmodebutton{
+  position: absolute;
+  margin-top: 4px;
+  margin-left:-150px;
+  transition: 0.25s ease;
+}
+#darkmodebutton:hover{
+  font-size: 17px;
+  transition: 0.25s ease;
 }

@@ -5,3 +5,11 @@
     transform: translateX(50px);
     transition: 1s ease;
 }
+#backbutton{
+    min-width: 100px;
+    transition: 1s ease;
+}
+#backbutton:hover{
+    transform: translateX(15px);
+    transition: 1s ease;
+}
