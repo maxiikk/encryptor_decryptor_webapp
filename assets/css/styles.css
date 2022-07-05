@@ -8,6 +8,7 @@
   opacity: 70%;
   margin-top:-28px;
   margin-left: 15px;
+  transition: 1s ease;
 }
 #encbutton{
   background: linear-gradient(-135deg, #c53, #430);
@@ -30,6 +31,7 @@
   margin-top: -28px;
   width: 650px;
   position:absolute;
+  transition: 1s ease;
 }
 #copytoclipbutton{
   background:linear-gradient(-138deg, rgb(87, 0, 4), rgb(0, 80, 90));
@@ -58,6 +60,9 @@
   background: linear-gradient(-135deg, rgb(0, 126, 57), rgb(0, 52, 119));
   transition: 0.25s ease;
 }
+#enctext{
+  transition: 1s ease;
+}
 #enctext:hover{
   transform: translateX(10px);
   color: rgb(43, 255, 0);
@@ -74,9 +79,11 @@
   margin-top: -28px;
   opacity: 70%;
   pointer-events: none;
+  transition: 1s ease;
 }
 #enctext2{
   margin-top: 10px;
+  transition: 1s ease;
 }
 #enctext2:valid ~ #decryptlabel2,
 #enctext2:focus ~ #decryptlabel2,
@@ -88,7 +95,9 @@
 #passwordlabel2{
   position: absolute;
   margin-top: -28px;
+  opacity: 70%;
   pointer-events: none;
+  transition: 1s ease;
   margin-left: 10px;
 }
 #dectextbutton{
@@ -102,4 +111,10 @@
   transform: translateX(200px);
   opacity: 100%;
   transition: 1s ease;
+}
+.animateresult{
+	transform: translateY(20px);
+	opacity: 0%;
+	opacity: 100%;
+	transition: 1s ease;
 }

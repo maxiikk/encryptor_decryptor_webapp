@@ -98,6 +98,7 @@ function decryptit(){
         try{
             var temp = CryptoJS.AES.decrypt(texttodec, mypassword)
             document.getElementById("decrtext").innerHTML = temp.toString(CryptoJS.enc.Utf8);
+            document.getElementById("decrtext").classList.add("animateresult");
         }
         catch(err){
             document.getElementById("decrtext").innerHTML = err.message;
@@ -106,7 +107,7 @@ function decryptit(){
 }
 function copytoclipboard(){
     var copyText = document.getElementById("enctext").innerHTML;
-    if (copyText.length != 0 && copyText != "Nothing to copy!"){
+    if (copyText.length != 0 && copyText != "Nothing to copy!" && copyText != "Fill the fields first!"){
         navigator.clipboard.writeText(copyText);
     }
     else{
